@@ -4,7 +4,7 @@ const PORT = 3000;
 
 app.use(express.json());
 
-// Rota de teste
+// Road of test
 app.get("/", (req, res) => {
   res.send("Backend funcionando.");
 });
