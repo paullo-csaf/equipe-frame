@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7b2cbf; /* violeta base */
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1, h2, .logo {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+.header .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  animation: glowPulse 3s infinite;
+}
+
+.header nav a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #f3f3f3;
+  font-weight: 500;
+}
+
+/* Botões */
+.btn-primary,
+.btn-dark {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #5a189a;
+  color: #fff;
+}
+
+.btn-dark {
+  background: #9d4edd;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-dark:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255,255,255,0.3);
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8%;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  animation: fadeInUp 2s ease-out forwards;
+  opacity: 0; /* começa invisível */
+}
+
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  color: #e0d4f7;
+}
+
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cluster-animation {
+  width: 100%;
+  max-width: 400px; 
+  height: 400px;
+  background: transparent;
+  display: block;
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #5a189a;
+  color: #fff;
+  margin-top: auto;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(60px); filter: blur(6px); }
+  60% { opacity: 0.7; transform: translateY(10px); filter: blur(2px); }
+  100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes glowPulse {
+  0% { text-shadow: 0 0 5px #fff, 0 0 10px #9d4edd; }
+  50% { text-shadow: 0 0 15px #fff, 0 0 30px #9d4edd; }
+  100% { text-shadow: 0 0 5px #fff, 0 0 10px #9d4edd; }
+}

@@ -19,10 +19,3 @@ The architecture combines Node.js on the backend (API + Stellar SDK), Rust for s
 # Differential
 
 Cluster prioritizes security with encrypted login, two-factor authentication (2FA), and full audit of operations. Its differential lies in combining modern usability with the power of Stellar, creating a practical solution for groups that want to manage crypto assets collaboratively and reliably.
-
-
-
-
-
-
-
